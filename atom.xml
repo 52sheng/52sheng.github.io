@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://52sheng.github.io</id>
+    <title>sheng的小窝</title>
+    <updated>2023-06-06T12:22:57.278Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://52sheng.github.io"/>
+    <link rel="self" href="https://52sheng.github.io/atom.xml"/>
+    <subtitle>学习是一种信仰</subtitle>
+    <logo>https://52sheng.github.io/images/avatar.png</logo>
+    <icon>https://52sheng.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, sheng的小窝</rights>
+    <entry>
+        <title type="html"><![CDATA[RevokeMsgPatcher：QQ/微信/TIM防撤回]]></title>
+        <id>https://52sheng.github.io/revokemsgpatcherv16qqwei-xin-tim-fang-che-hui/</id>
+        <link href="https://52sheng.github.io/revokemsgpatcherv16qqwei-xin-tim-fang-che-hui/">
+        </link>
+        <updated>2023-06-04T15:48:47.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[markdown学习篇：Typora下载]]></title>
+        <id>https://52sheng.github.io/markdown-xue-xi-pian-typora-xia-zai/</id>
+        <link href="https://52sheng.github.io/markdown-xue-xi-pian-typora-xia-zai/">
+        </link>
+        <updated>2023-06-03T08:57:51.000Z</updated>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Gridea无法同步GitHub问题]]></title>
+        <id>https://52sheng.github.io/gridea-wu-fa-tong-bu-github-wen-ti/</id>
+        <link href="https://52sheng.github.io/gridea-wu-fa-tong-bu-github-wen-ti/">
+        </link>
+        <updated>2023-06-02T01:38:08.000Z</updated>
+    </entry>
+</feed>

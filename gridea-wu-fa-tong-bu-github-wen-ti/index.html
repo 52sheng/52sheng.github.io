@@ -1,0 +1,171 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gridea无法同步GitHub问题 | sheng的小窝</title>
+<link rel="shortcut icon" href="https://52sheng.github.io/favicon.ico?v=1686054167608">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="stylesheet" href="https://52sheng.github.io/styles/main.css">
+<link rel="alternate" type="application/atom+xml" title="Gridea无法同步GitHub问题 | sheng的小窝 - Atom Feed" href="https://52sheng.github.io/atom.xml">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700">
+
+
+
+    <meta name="description" content="1.问题由来
+在很多小伙伴使用gridea搭建博客刚开始的时候呢，没有服务器，也没有域名，只好借助GitHub或者gitee提供的静态page来搭建博客。
+但是有一个问题是，GitHub的服务器在国外，有时候明明提示连接成功了，但是还是无法..." />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css">
+    <script src="//cdn.jsdelivr.net/gh/highlightjs/cdn-release@11.5.1/build/highlight.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-content">
+        <div class="site-header">
+  <a href="https://52sheng.github.io">
+  <img class="avatar" src="https://52sheng.github.io/images/avatar.png?v=1686054167608" alt="">
+  </a>
+  <h1 class="site-title">
+    sheng的小窝
+  </h1>
+  <p class="site-description">
+    学习是一种信仰
+  </p>
+  <div class="menu-container">
+    
+      
+        <a href="/" class="menu">
+          首页
+        </a>
+      
+    
+      
+        <a href="/archives" class="menu">
+          归档
+        </a>
+      
+    
+      
+        <a href="/tags" class="menu">
+          标签
+        </a>
+      
+    
+      
+        <a href="https://52sheng.github.io" class="menu">
+          关于
+        </a>
+      
+    
+  </div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+        <div class="post-detail">
+          <article class="post">
+            <h2 class="post-title">
+              Gridea无法同步GitHub问题
+            </h2>
+            <div class="post-info">
+              <span>
+                2023-06-02
+              </span>
+              <span>
+                1 min read
+              </span>
+              
+            </div>
+            
+            <div class="post-content-wrapper">
+              <div class="post-content" v-pre>
+                <h2 id="1问题由来">1.问题由来</h2>
+<p>在很多小伙伴使用gridea搭建博客刚开始的时候呢，没有服务器，也没有域名，只好借助GitHub或者gitee提供的静态page来搭建博客。</p>
+<p>但是有一个问题是，GitHub的服务器在国外，有时候明明提示连接成功了，但是还是无法同步过去。</p>
+<h2 id="2解决方法">2.解决方法</h2>
+<p>在gridea主页进行远程配置的页面，将HTTP代理选择proxy（代理）而不是direct（直连）。</p>
+<p>正常情况下代理软件被运行在本地计算机内，所以地址通常是127.0.0.1或者localhost，端口取决于代理软件。</p>
+
+              </div>
+              <div class="toc-container">
+                <ul class="markdownIt-TOC">
+<li>
+<ul>
+<li><a href="#1%E9%97%AE%E9%A2%98%E7%94%B1%E6%9D%A5">1.问题由来</a></li>
+<li><a href="#2%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95">2.解决方法</a></li>
+</ul>
+</li>
+</ul>
+
+              </div>
+            </div>
+          </article>
+        </div>
+
+        
+
+        
+
+        <div class="site-footer">
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+  <a class="rss" href="https://52sheng.github.io/atom.xml" target="_blank">
+    <i class="ri-rss-line"></i> RSS
+  </a>
+</div>
+
+      </div>
+    </div>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      let mainNavLinks = document.querySelectorAll(".markdownIt-TOC a");
+
+      // This should probably be throttled.
+      // Especially because it triggers during smooth scrolling.
+      // https://lodash.com/docs/4.17.10#throttle
+      // You could do like...
+      // window.addEventListener("scroll", () => {
+      //    _.throttle(doThatStuff, 100);
+      // });
+      // Only not doing it here to keep this Pen dependency-free.
+
+      window.addEventListener("scroll", event => {
+        let fromTop = window.scrollY;
+
+        mainNavLinks.forEach((link, index) => {
+          let section = document.getElementById(decodeURI(link.hash).substring(1));
+          let nextSection = null
+          if (mainNavLinks[index + 1]) {
+            nextSection = document.getElementById(decodeURI(mainNavLinks[index + 1].hash).substring(1));
+          }
+          if (section.offsetTop <= fromTop) {
+            if (nextSection) {
+              if (nextSection.offsetTop > fromTop) {
+                link.classList.add("current");
+              } else {
+                link.classList.remove("current");    
+              }
+            } else {
+              link.classList.add("current");
+            }
+          } else {
+            link.classList.remove("current");
+          }
+        });
+      });
+
+    </script>
+  </body>
+</html>
